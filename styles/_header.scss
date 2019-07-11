@@ -1,0 +1,64 @@
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar {
+  color: #212121;
+  padding: 20px 0;
+  background-color: white;
+
+  nav {
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.menu {
+
+  &__item {
+
+    margin-left: 37px;
+
+    a {
+      font-size: 20px;
+      color: #212121;
+      font-family: 'Open Sans Semibold';
+
+      &:hover {
+        text-decoration: none;
+        color: #cecece;
+      }
+    }
+  }
+}
+
+.logo-bar {
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.menu-icon {
+  display: none;
+
+  @include desktop {
+    display: block;
+    background-color: #cecece;
+    border: none;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+
+
+
+

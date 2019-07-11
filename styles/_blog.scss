@@ -1,0 +1,115 @@
+.left > div:first-child {
+  order: 1;
+};
+
+.left > div:last-child {
+  order: 2;
+}
+
+.right > div:first-child {
+  order: 2;
+
+  @include mobile {
+    order: 1;
+  }
+};
+
+.right > div:last-child {
+  order: 1;
+
+  @include mobile {
+    order: 2;
+  }
+}
+
+.blog {
+  background-color: #e4fdf9;
+  text-align: center;
+  padding: 115px 0 125px 0;
+
+  @include mobile {
+    padding: 20px 0;
+  }
+
+
+  &__title {
+    font-size: 25px;
+    color: #212121;
+    font-family: 'Open Sans Semibold';
+
+    &:hover {
+      color: #00897b;
+      text-decoration: none;
+    }
+  }
+
+  &-block {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 20px;
+
+    @include desktop {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+
+    span {
+      font-size: 17px;
+      font-family: 'Open Sans Semibold';
+      margin-right: 35px;
+
+      @include desktop {
+        margin-right: 15px;
+
+        @include mobile {
+          margin-right: 10px;
+          font-size: 14px;
+        }
+      }
+
+      i {
+        margin-right: 15px;
+
+        @include mobile {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &__caption {
+    margin: 15px 0 20px;
+  }
+
+  &__text {
+    font-size: 15px;
+  }
+
+  .row {
+    margin-left: -40px;
+    margin-right: -40px;
+
+    @include desktop {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  button {
+    border-color: #00897b;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Open Sans Semibold';
+    margin-top: 125px;
+
+    &:hover {
+      background-color: #00897b;
+      color: white;
+    }
+
+    @include mobile {
+      margin-top: 10px;
+    }
+  }
+}
+

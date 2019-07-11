@@ -1,0 +1,59 @@
+.portfolio {
+  padding: 120px 0 135px;
+  text-align: center;
+
+  @include mobile {
+    padding: 20px;
+  }
+
+  button {
+    border-color: #00897b;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Open Sans Semibold';
+
+    &:hover {
+      background-color: #00897b;
+      color: white;
+    }
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+}
+
+.filter {
+  padding: 120px 0;
+  transition: 0.3s;
+
+  @include mobile {
+    padding: 20px;
+  }
+}
+
+.focused {
+  background-color: #00897b;
+  color: white;
+}
+
+div[filter]:hover img {
+  filter: brightness(50%);
+  transition: 0.3s;
+}
+
+div[filter]:hover .text {
+  display: block;
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 3;
+  text-align: center;
+}
+
+.text {
+  display: none;
+}

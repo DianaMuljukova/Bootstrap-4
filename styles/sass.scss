@@ -1,0 +1,37 @@
+body {
+  font-family: 'Open Sans';
+}
+
+@import "mixins";
+@import "fonts";
+@import "header";
+@import "main-page";
+@import "about";
+@import "services";
+@import "portfolio";
+@import "pricing";
+@import "team";
+@import "blog";
+@import "footer";
+@import "rights";
+
+
+#toTop {
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: #00897b;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+
+

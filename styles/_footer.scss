@@ -1,0 +1,83 @@
+.footer {
+  padding: 120px 0 110px;
+  text-align: center;
+  color: white;
+  background-image: url("../images/footer.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+
+  @include mobile {
+    padding: 20px;
+  }
+
+  .about__text {
+    color: white;
+  }
+
+  &__contacts {
+    font-size: 20px;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 20px 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+
+    @include desktop {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    outline: none;
+  }
+
+  &__textarea {
+    margin: 30px 0;
+    resize: none;
+  }
+
+  &__button {
+    font-size: 20px;
+    color: #212121;
+    padding: 20px 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #3949ab;
+    }
+  }
+}
+
+.fa-map-marker-alt,
+.fa-phone,
+.fa-envelope {
+  font-size: 62px;
+  color: white;
+}
+
+.circle {
+  background-color: #3949ab;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 35px;
+}
+
+.form {
+  margin-top: 70px;
+
+  @include mobile {
+    margin-top: 20px;
+  }
+}

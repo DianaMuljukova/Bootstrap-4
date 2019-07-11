@@ -1,0 +1,64 @@
+.main-page {
+  background-image: url("../images/header-bg.png");
+  padding: 180px 0;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: 0 100%;
+  position: relative;
+
+  @include mobile {
+    padding: 20px;
+  }
+
+  &__title {
+    font-size: 55px;
+
+    @include mobile {
+      font-size: 45px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-bottom: 100px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.button {
+  padding: 10px 25px;
+  margin: 0 10px;
+  color: white;
+  transition: 0.3s;
+  background-color: transparent;
+  border: 2px solid white;
+
+  @include mobile {
+    margin-bottom: 10px;
+  }
+}
+
+.button:hover {
+  background-color: #004F43;
+  border-color: transparent;
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+
+  @include mobile {
+    display: none;
+  }
+}
